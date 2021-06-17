@@ -22,8 +22,7 @@ class device_handler(debounce_handler):
     """
     #TRIGGERS = {str(sys.argv[1]): int(sys.argv[2])}
     #TRIGGERS = {"Light": 52000}
-    TRIGGERS = {"LED": 52000,"FAN":51000}
-
+TRIGGERS = {"foco": 52000}
     def act(self, client_address, state, name):
         print("State", state, "from client @", client_address)
         # GPIO.setmode(GPIO.BOARD) ## Use board pin numbering
